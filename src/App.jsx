@@ -3,30 +3,6 @@ import React, { useState } from 'react';
 const PRODUCTS_DATA = [
   {
     id: 1,
-    name: 'Profil',
-    description: 'Har xil o\'lchamdagi yuqori sifatli profillar.',
-    price: 12000,
-    unit: 'metr',
-    image: 'https://metallas.ru/image/cache/600-600/data/liststalnoy/truba-profilnaya-kvadratnaya.jpg'
-  },
-  {
-    id: 2,
-    name: 'Sinfli Tunuka (List)',
-    description: 'Turli qalinlikdagi temir listlar va tunukalar.',
-    price: 185000,
-    unit: 'dona',
-    image: 'https://frankfurt.apollo.olxcdn.com/v1/files/64mdoo0ocqvb1-UZ/image'
-  },
-  {
-    id: 3,
-    name: 'Duraluminiy List',
-    description: 'Yengil va mustahkam duraluminiy listlar.',
-    price: 25000,
-    unit: 'metr',
-    image: 'https://www.shutterstock.com/image-illustration/steel-pipes-metal-square-tubes-600nw-2618785355.jpg'
-  },
-  {
-    id: 4,
     name: 'Armnatura 12 (A500C)',
     description: 'Yengil va mustahkam Armaturalar.',
     price: 7000,
@@ -34,7 +10,7 @@ const PRODUCTS_DATA = [
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnBBBHSSjQBeRhVrXe1051_ZqzIlZXLSFT2A&s'
   },
   {
-    id: 5,
+    id: 2,
     name: 'Armnatura 14 (A500C)',
     description: 'Yengil va mustahkam Armaturalar.',
     price: 10000,
@@ -42,7 +18,7 @@ const PRODUCTS_DATA = [
     image: 'https://www.prom.uz/_ipx/f_webp/https://devel.prom.uz/upload//products/2026/5/15/2/24.png'
   },
   {
-    id: 6,
+    id: 3,
     name: 'Armnatura 16 (A500C)',
     description: 'Yengil va mustahkam Armaturalar.',
     price: 13000,
@@ -50,7 +26,7 @@ const PRODUCTS_DATA = [
     image: 'https://www.prom.uz/_ipx/f_webp/https://devel.prom.uz/upload//products/2026/5/15/2/25.png'
   },
   {
-    id: 7,
+    id: 4,
     name: 'Armnatura 18 (A500C)',
     description: 'Yengil va mustahkam Armaturalar.',
     price: 17000,
@@ -58,7 +34,7 @@ const PRODUCTS_DATA = [
     image: 'https://www.prom.uz/_ipx/f_webp/https://devel.prom.uz/upload//products/2026/5/15/2/26.png'
   },
   {
-    id: 8,
+    id: 5,
     name: 'Armnatura 20 (A500C)',
     description: 'Yengil va mustahkam Armaturalar.',
     price: 20000,
@@ -66,7 +42,7 @@ const PRODUCTS_DATA = [
     image: 'https://www.prom.uz/_ipx/f_webp/https://devel.prom.uz/upload//products/2026/5/15/2/27.png'
   },
   {
-    id: 9,
+    id: 6,
     name: 'Armnatura 22 (A500C)',
     description: 'Yengil va mustahkam Armaturalar.',
     price: 25000,
@@ -74,7 +50,7 @@ const PRODUCTS_DATA = [
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPnD9LsuvDoq6sR2flgddOkdkPe9kHDPVeVA&s'
   },
   {
-    id: 10,
+    id: 7,
     name: 'Armnatura 25 (A500C)',
     description: 'Yengil va mustahkam Armaturalar.',
     price: 32000,
@@ -83,58 +59,58 @@ const PRODUCTS_DATA = [
   },
 
   {
-    id: 11,
+    id: 8,
     name: 'Armnatura 12 (A400C)',
     description: 'Yengil va mustahkam Armaturalar.',
-    price: 32000,
+    price: 7000,
     unit: 'metr',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnBBBHSSjQBeRhVrXe1051_ZqzIlZXLSFT2A&s'
   },
   {
-    id: 12,
+    id: 9,
     name: 'Armnatura 14 (A400C)',
     description: 'Yengil va mustahkam Armaturalar.',
-    price: 32000,
+    price: 9500,
     unit: 'metr',
     image: 'https://www.prom.uz/_ipx/f_webp/https://devel.prom.uz/upload//products/2026/5/15/2/24.png'
   },
   {
-    id: 13,
+    id: 10,
     name: 'Armnatura 16 (A400C)',
     description: 'Yengil va mustahkam Armaturalar.',
-    price: 32000,
+    price: 12000,
     unit: 'metr',
     image: 'https://www.prom.uz/_ipx/f_webp/https://devel.prom.uz/upload//products/2026/5/15/2/25.png'
   },
   {
-    id: 14,
+    id: 11,
     name: 'Armnatura 18 (A400C)',
     description: 'Yengil va mustahkam Armaturalar.',
-    price: 32000,
+    price: 16000,
     unit: 'metr',
     image: 'https://www.prom.uz/_ipx/f_webp/https://devel.prom.uz/upload//products/2026/5/15/2/26.png'
   },
   {
-    id: 15,
+    id: 12,
     name: 'Armnatura 20 (A400C)',
     description: 'Yengil va mustahkam Armaturalar.',
-    price: 32000,
+    price: 19000,
     unit: 'metr',
     image: 'https://www.prom.uz/_ipx/f_webp/https://devel.prom.uz/upload//products/2026/5/15/2/27.png'
   },
   {
-    id: 16,
+    id: 13,
     name: 'Armnatura 22 (A400C)',
     description: 'Yengil va mustahkam Armaturalar.',
-    price: 32000,
+    price: 24000,
     unit: 'metr',
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPnD9LsuvDoq6sR2flgddOkdkPe9kHDPVeVA&sf'
   },
   {
-    id: 17,
+    id: 14,
     name: 'Armnatura 25 (A400C)',
     description: 'Yengil va mustahkam Armaturalar.',
-    price: 32000,
+    price: 30000,
     unit: 'metr',
     image: 'https://rt-metall.ru/wp-content/uploads/2016/04/a500c-25-mm.jpg'
   }
