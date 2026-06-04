@@ -113,6 +113,14 @@ const PRODUCTS_DATA = [
     price: 30000,
     unit: 'metr',
     image: 'https://rt-metall.ru/wp-content/uploads/2016/04/a500c-25-mm.jpg'
+  },
+    {
+    id: 15,
+    name: 'Profil',
+    description: 'Bizda profilni xili juda kop turlari mavjud, ushan uchun sizga telefon qilgan odamlardan qanaqa kerakligini surang!',
+    price: 0,
+    unit: 'metr',
+    image: 'https://insaat.az/uploads/news/74497f9142031bcb3b70bf4a628f9066.jpg'
   }
 ];
 
@@ -140,7 +148,7 @@ export default function App() {
     const message = `🔔 <b>YANGI BUYURTMA KELDI!</b>\n\n` +
                     `📦 <b>Mahsulot:</b> ${selectedProduct.name}\n` +
                     `📏 <b>Miqdori:</b> ${quantity} ${selectedProduct.unit}\n` +
-                    `💵 <b>Umumiy summa:</b> ${totalPrice.toLocaleString('uz-UZ')} so'm\n\n` +
+                    `💵 <b>Summa:</b> ${totalPrice.toLocaleString('uz-UZ')} so'm\n\n` +
                     `📱 <b>Mijoz telefoni:</b> ${phone}\n\n` +
                     `✍️ <i>Sotib oluvchi bilan tezda bog'laning!</i>`;
 
@@ -163,7 +171,7 @@ export default function App() {
       }
     } catch (error) {
       console.error(error);
-      alert("Tarmoqda xatolik yuz berdi!");
+      alert("Error 404!");
     } finally {
       setLoading(false);
     }
@@ -177,10 +185,9 @@ export default function App() {
       </nav>
       <div style={{ backgroundColor: '#0f172a', color: 'white', textAlign: 'center', padding: '60px 20px' }}>
         <h1 style={{ fontSize: '2.5rem', marginBottom: '10px', margin: 0 }}>Sifatli Metall Prokati</h1>
-        <p style={{ color: '#94a3b8', margin: '10px 0 0 0' }}>Buyurtma bering, xabar guruhga avtomat yetib boradi!</p>
       </div>
       <div style={{ maxWidth: '1100px', margin: '40px auto', padding: '0 20px' }}>
-        <h2 style={{ textAlign: 'center', color: '#1e293b' }}>Mahsulotlarimiz</h2>
+        <h2 style={{ textAlign: 'center', color: '#1e293b' }}>Mahsulotlarimiz:</h2>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', justifyContent: 'center', marginTop: '20px' }}>
           {PRODUCTS_DATA.map((product) => (
             <div key={product.id} style={{ backgroundColor: 'white', borderRadius: '10px', overflow: 'hidden', boxShadow: '0 4px 6px rgba(0,0,0,0.1)', width: '300px' }}>
@@ -221,7 +228,7 @@ export default function App() {
           </div>
 
           <div style={{ marginBottom: '15px' }}>
-            <label style={{ display: 'block', marginBottom: '5px', color: '#cbd5e1' }}>Miqdori ({selectedProduct.unit}):</label>
+            <label style={{ display: 'block', marginBottom: '5px', color: '#cbd5e1' }}>Miqdori: ({selectedProduct.unit}):</label>
             <input 
               type="number" 
               value={quantity} 
