@@ -125,7 +125,7 @@ const PRODUCTS_DATA = [
 ];
 
 export default function App() {
-  const [selectedId, setSelectedId] = useState(PRODUCTS_DATA[0].id);
+  const [selectedId, setSelectedId] = useState(1);
   const [quantity, setQuantity] = useState(1);
   const [phone, setPhone] = useState(''); 
   const [loading, setLoading] = useState(false); 
