@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/Temir-Bozor/static/js/main.1b4345ee.js",
-    "index.html": "/Temir-Bozor/index.html",
-    "main.1b4345ee.js.map": "/Temir-Bozor/static/js/main.1b4345ee.js.map"
+    "main.js": "/Temir-Bozor-Sayti/static/js/main.1c6077ef.js",
+    "index.html": "/Temir-Bozor-Sayti/index.html",
+    "main.1c6077ef.js.map": "/Temir-Bozor-Sayti/static/js/main.1c6077ef.js.map"
   },
   "entrypoints": [
-    "static/js/main.1b4345ee.js"
+    "static/js/main.1c6077ef.js"
   ]
 }
