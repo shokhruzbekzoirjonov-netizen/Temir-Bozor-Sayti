@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/Temir-Bozor-/static/js/main.1b4345ee.js",
-    "index.html": "/Temir-Bozor-/index.html",
-    "main.1b4345ee.js.map": "/Temir-Bozor-/static/js/main.1b4345ee.js.map"
+    "main.js": "/Temir-Bozor/static/js/main.1b4345ee.js",
+    "index.html": "/Temir-Bozor/index.html",
+    "main.1b4345ee.js.map": "/Temir-Bozor/static/js/main.1b4345ee.js.map"
   },
   "entrypoints": [
     "static/js/main.1b4345ee.js"
