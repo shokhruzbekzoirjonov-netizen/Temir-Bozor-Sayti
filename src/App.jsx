@@ -125,7 +125,7 @@ const PRODUCTS_DATA = [
 ];
 
 export default function App() {
-  const [selectedId, setSelectedId] = useState(1);s
+  const [selectedId, setSelectedId] = useState(1);
   const [quantity, setQuantity] = useState(1);
   const [phone, setPhone] = useState(''); 
   const [loading, setLoading] = useState(false); 
@@ -135,8 +135,8 @@ export default function App() {
   const CHAT_ID = '-5083266505';
   const selectedProduct = PRODUCTS_DATA.find(p => p.id === Number(selectedId)) || PRODUCTS_DATA[0];
   const totalPrice = selectedProduct.price * quantity;
-
-  const sendOrderToBot = async (e) => {
+        }
+  const sendOrderToBot = async (e) =>{ 
     e.preventDefault();
     if (!phone) {
       alert("Iltimos, telefon raqamingizni kiriting!");
@@ -212,7 +212,7 @@ export default function App() {
       </div>
       <div id="calculator" style={{ maxWidth: '450px', margin: '40px auto', backgroundColor: '#1e293b', color: 'white', padding: '30px', borderRadius: '15px', boxSizing: 'border-box' }}>
         <h3 style={{ textAlign: 'center', color: '#f59e0b', margin: '0 0 20px 0' }}>🧮 Buyurtma Rasmiylashtirish</h3>
-        
+
         <form onSubmit={sendOrderToBot}>
           <div style={{ marginBottom: '15px' }}>
             <label style={{ display: 'block', marginBottom: '5px', color: '#cbd5e1' }}>Tanlangan mahsulot:</label>
@@ -269,4 +269,3 @@ export default function App() {
 
     </div>
   );
-}
