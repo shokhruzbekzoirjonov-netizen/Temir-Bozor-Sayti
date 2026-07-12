@@ -175,7 +175,7 @@ export default function App() {
     } finally {
       setLoading(false);
     }
-  }
+  };
 }; return (
     <div style={{ fontFamily: 'sans-serif', backgroundColor: '#f4f6f9', minHeight: '100vh', paddingBottom: '50px', margin: 0 }}>
       <nav style={{ backgroundColor: '#1e293b', color: 'white', padding: '15px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
