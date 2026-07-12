@@ -135,7 +135,7 @@ export default function App() {
   const CHAT_ID = '-5083266505';
   const selectedProduct = PRODUCTS_DATA.find(p => p.id === Number(selectedId)) || PRODUCTS_DATA[0];
   const totalPrice = selectedProduct.price * quantity;
-
+};
   const sendOrderToBot = async (e) =>{ 
     e.preventDefault();
     if (!phone) {
@@ -176,7 +176,7 @@ export default function App() {
       setLoading(false);
     }
   };
-};
+
   return (
     <div style={{ fontFamily: 'sans-serif', backgroundColor: '#f4f6f9', minHeight: '100vh', paddingBottom: '50px', margin: 0 }}>
       <nav style={{ backgroundColor: '#1e293b', color: 'white', padding: '15px 20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
