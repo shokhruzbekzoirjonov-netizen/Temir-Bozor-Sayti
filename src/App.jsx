@@ -129,8 +129,8 @@ export default function App() {
   const [phone, setPhone] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const TELEGRAM_BOT_TOKEN = '8939723627:AAFB_pfW7pBmfOKve2qPoM0K_tYweSKCfHU';
-  const CHAT_ID = '-5083266505';
+  const TELEGRAM_BOT_TOKEN = process.env.REACT_APP_TELEGRAM_BOT_TOKEN || '8939723627:AAFB_pfW7pBmfOKve2qPoM0K_tYweSKCfHU';
+  const CHAT_ID = process.env.REACT_APP_CHAT_ID || '-5083266505';
 
   const selectedProduct = PRODUCTS_DATA.find(p => p.id === Number(selectedId)) || PRODUCTS_DATA[0];
   const totalPrice = selectedProduct.price * quantity;
