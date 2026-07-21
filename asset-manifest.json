@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/Temir-Bozor-Sayti/static/js/main.1c6077ef.js",
-    "index.html": "/Temir-Bozor-Sayti/index.html",
-    "main.1c6077ef.js.map": "/Temir-Bozor-Sayti/static/js/main.1c6077ef.js.map"
+    "main.css": "/JavokhirBarber/static/css/main.3982bb5f.css",
+    "main.js": "/JavokhirBarber/static/js/main.0665cac0.js",
+    "index.html": "/JavokhirBarber/index.html",
+    "main.3982bb5f.css.map": "/JavokhirBarber/static/css/main.3982bb5f.css.map",
+    "main.0665cac0.js.map": "/JavokhirBarber/static/js/main.0665cac0.js.map"
   },
   "entrypoints": [
-    "static/js/main.1c6077ef.js"
+    "static/css/main.3982bb5f.css",
+    "static/js/main.0665cac0.js"
   ]
 }
